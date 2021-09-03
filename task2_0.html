@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{ 
+  background-color:gray;
+  margin:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+}
+.container{
+  width:400px;
+  align:center;
+  padding:12px 20px;
+  background-color:white;
+  design:block;
+  border-radius:50px;
+}
+.form__message{
+  text-align:center;
+  margin-bottom: 1rem;
+}
+.form__message--success{
+  color:green;
+}
+.form__message--error{
+  color:red;
+}
+.form__title{
+  margin-bottom:2rem;
+  text-align:center;
+}  
+.form__input-group{
+  margin-bottom:2rem;
+}
+.form__input{
+  display:block;
+  width:100%;
+  padding:0.75rem;
+  box-sizing:border-box;
+  border:1px solid ;
+  outline:none;
+  background:lightgray;
+  border-radius:5px;
+}  
+.form__input:focus{
+  border-color:blue;
+  background-color:white;
+}
+.form__input--error{
+  color:red;
+  border-color:red;
+}
+.form__input-error-message{
+  margin-top:0.5rem;
+  color:red;
+  font-size:0.85rem;
+}
+.form__button{
+  width:100%;
+  background-color:blue;
+  border-radius:10px;
+  color:white;
+  padding:12px 20px;
+}
+.form__button:hover{
+  background-color:darkblue;
+  cursor:pointer;
+}
+.form__button:active{
+  transform:scale(0.95);
+}
+.form__text{
+  text-align:center;
+}
+.form__link{
+  text-decoration:none;
+}
+.form__link:hover{
+  text-decoration:underline;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <form>
+    <h1 class="form__title">Sign up</h1>
+    <div class="form__message form__message--error"></div>
+    <div class="form__input-group">
+      <input type="type" class="form__input" autofocus placeholder="enter E-mail" id="email" name="email">
+      <div class="form__input-error-message"></div>
+  </div> 
+    <div class="form__input-group">
+      <input type="password" class="form__input" autofocus placeholder="enter Password" id="password" name="password">
+      <div class="form__input-error-message"></div>
+  </div> 
+    <div class="form__input-group">
+      <input type="password" class="form__input" autofocus placeholder="Re-enter Password" id="Password" name="Password">
+      <div class="form__input-error-message"></div>
+  </div> 
+  <p align="center"><button type="submit" class="form__button">Sign up</button></p>
+  <a href="" class="form__link">Already have an account?Sign in</a>
+  </form>
+</div>
+</body>
+</html>
